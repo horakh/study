@@ -54,7 +54,19 @@ namespace Library
                 if (reader!=null) reader.Dispose();
             }
 
-            using (StreamReader r = new StreamReader("Content/library.txt"))
+
+            /* using (StreamReader r = new StreamReader("Content/library.txt"))
+              {
+                  while (!r.EndOfStream)
+                  {
+
+                      Console.WriteLine(r.ReadLine());
+                  }
+              }
+
+                  Console.WriteLine("Loaded");
+              Console.ReadKey();*/
+            using (StreamReader r = new StreamReader("Content/libDns.txt"))
             {
                 while (!r.EndOfStream)
                 {
@@ -63,7 +75,7 @@ namespace Library
                 }
             }
 
-                Console.WriteLine("Loaded");
+            Console.WriteLine("Loaded, homework completed");
             Console.ReadKey();
         }
     }
