@@ -18,5 +18,9 @@ namespace NewLibrary.Controllers
         {
             return View();
         }
+        public ActionResult Books()
+        {
+            return View();
+        }
     }
 }
